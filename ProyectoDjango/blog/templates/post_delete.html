@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Borrar post</h1>
+<form action="" method="post">{% csrf_token %}
+  <p>¿Seguro de que borraras el post? con titulo : {{ post.titulo }} creado en {{ post.creado }} ?</p>
+  <input type="submit" value="Confirmo, Borralo">
+</form>
+{% endblock content %}
