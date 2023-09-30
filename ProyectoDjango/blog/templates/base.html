@@ -49,6 +49,14 @@
                 </div>
             </div>
         </header>
+        {% if user.is_authenticated %}
+        <p>Bienvenido Nuevamente {{ user.username }}!</p>   <!-- si el usuario esta autnticado saluda-->
+        <p><a href="{% url 'logout' %}">Cerrar sesion</a></p>
+        {% else %}
+        <p>Hola! aún no has iniciado sesion</p>  <!-- si no le pide que inicie sesion-->
+        <p> <a href="{% url 'login' %}">Inicia sesion</a></p> 
+        <p><a href="{% url 'signup' %}">Registrate</a></p> 
+        {% endif %}
         <!-- Main Content-->
         <div>
             {% block content %}
