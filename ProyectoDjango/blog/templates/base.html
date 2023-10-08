@@ -32,6 +32,15 @@
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'post_new' %}">Nuevo Post</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a></li>
+                        {%if not request.user.is_authenticated %}
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'login' %}">Inicia Sesion</a></li>
+                        {%endif %}
+                        {%if request.user.is_authenticated %}
+                        <li class="nav-item">
+                            <span class="nav-link px-lg-3 py-3 py-lg-4 d-inline-block text-white">Hola! {{ user.username }}</span>
+                        </li>
+                        
+                        {%endif %}
                     </ul>
                 </div>
             </div>
@@ -50,8 +59,9 @@
             </div>
         </header>
         {% if user.is_authenticated %}
-        <p>Bienvenido Nuevamente {{ user.username }}!</p>   <!-- si el usuario esta autnticado saluda-->
+        <p>Bienvenido Nuevamente Usuario:{{ user.username }}!</p>   <!-- si el usuario esta autnticado saluda-->
         <p><a href="{% url 'logout' %}">Cerrar sesion</a></p>
+        
         {% else %}
         <p>Hola! aún no has iniciado sesion</p>  <!-- si no le pide que inicie sesion-->
         <p> <a href="{% url 'login' %}">Inicia sesion</a></p> 
