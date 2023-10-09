@@ -2,8 +2,11 @@
 
 {% block content %}
 <h1>Editando Post</h1>
+<br></br>
+<table>
 <form action="" method="post">{% csrf_token %}
-  {{ form.as_p }}
-<input type="submit" value="Actualizar Post">
-</form>
+  {{ form.as_table }}
+<button class="btn btn-secondary"> Actualizar </button>
+<br></br>
+</table>
 {% endblock content %}

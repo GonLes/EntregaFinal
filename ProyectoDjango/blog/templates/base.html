@@ -42,9 +42,9 @@
                       Perfil
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Datos de tu cuenta</a></li>
-                      <li><a class="dropdown-item" href="#">Tu perfil</a></li>
-                      <li><a class="dropdown-item" href="#">Edita tu Perfil</a></li>
+                      <li><a class="dropdown-item" href="{% url 'edit_profile' %}">Datos de tu cuenta</a></li>
+                      <li><a class="dropdown-item" href="{% url 'show_profile_page' user.avatar.id %}">Tu perfil</a></li>
+                      <li><a class="dropdown-item" href="{% url 'edit_profile_page' user.avatar.id %}">Edita tu Perfil</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">

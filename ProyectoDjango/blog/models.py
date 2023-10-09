@@ -11,8 +11,10 @@ class Post(models.Model):
         on_delete=models.CASCADE,null=True
     )
     cuerpo = models.TextField()
+    imagen_post = models.ImageField(upload_to='post', null=True, blank = True)
     creado=models.DateField(auto_now_add=True,editable=False)
     modificado=models.DateField(auto_now=True)
+
     def __str__(self):
         return f'{self.titulo}-{self.autor}-{self.creado}'
 
