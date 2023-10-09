@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Perfil</h2>
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{{user.avatar.imagen.url}}" class="img-fluid rounded-start" >
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{ page_user.user.first_name}} {{page_user.user.last_name }}</h5>
+        <p class="card-text">{{ page_user.user.avatar.bio}}</p>
+        <a href="http://{{ page_user.user.avatar.url_linkedin}}" class="card-link">Linkedin</a>
+        <a href="http://{{ page_user.user.avatar.url_github}}" class="card-link">Github</a>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
