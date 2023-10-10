@@ -11,9 +11,11 @@ urlpatterns = [
     path("post/new/", BlogCreateView.as_view(), name="post_new"),  # new
     path("post/<int:pk>/", BlogDetailView.as_view(), name="post_detail"),
     path("", BlogListView.as_view(), name="home"),
+    path('about/', about, name='about'),
       
     
 ]
 
 # para iamagenes
-urlpatterns+= static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

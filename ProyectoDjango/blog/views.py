@@ -56,4 +56,7 @@ def editar_perfil(request):
     else:
         formularioEditorPerfil = UserEditForm(instance=usuario)
         return render(request, "editar_perfil.html", {"formularioEditorPerfil": formularioEditorPerfil})
+    
+def about(request):
+    return render(request, 'about.html')
 

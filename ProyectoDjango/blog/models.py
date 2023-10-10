@@ -11,7 +11,7 @@ class Post(models.Model):
         on_delete=models.CASCADE,null=True
     )
     cuerpo = models.TextField()
-    imagen_post = models.ImageField(upload_to='post', null=True, blank = True)
+    imagen_post = models.ImageField(upload_to='post/', null=True, blank = True)
     creado=models.DateField(auto_now_add=True,editable=False)
     modificado=models.DateField(auto_now=True)
 
@@ -25,7 +25,7 @@ class Post(models.Model):
 
 class Avatar(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    imagen = models.ImageField(upload_to='avatares', null=True, blank = True)
+    imagen = models.ImageField(upload_to='avatares/', null=True, blank = True)
     url_linkedin=models.CharField(max_length=200,null=True)
     url_github=models.CharField(max_length=200,null=True)
     bio=models.TextField(max_length=1000,null=True)
