@@ -3,13 +3,15 @@
 {% block content %}
 <div class="container">
   <h2>{{ post.titulo }}</h2>
-  <p>{{ post.cuerpo }}</p>
-    <p>Posteado Por:{{ post.autor }}</p>
+  <p class="lead text-justify">{{ post.cuerpo }}</p>
+  {% if  post.imagen_post %}
+  <img src="{{post.imagen_post.url}}">
+  {% endif %}
+  <p>Posteado Por:{{ post.autor }}</p>
   <a href="{% url 'show_profile_page' post.autor.avatar.id %}" style="font-weight: bold; text-decoration: underline;color:green;">Ver Perfil</a>
    <p>Creado:{{ post.creado }}</p>
     <p>Modificado:{{ post.modificado }}</p>
-    <img src="{{post.imagen_post}}" >
-  {% if user.is_authenticated %}
+    {% if user.is_authenticated %}
     {% if user.id == post.autor.id %}
     <div style="text-align: center;">
     <a href="{% url 'post_edit' post.pk %}" style="font-weight: bold; text-decoration: underline;color:green;">Editar Post</a>
