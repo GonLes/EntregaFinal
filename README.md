@@ -1,22 +1,26 @@
-# EntregaFinal
-Proyecto Entrega Final 
-
+Entrega Final - Proyecto Django
 Admin Panel
-    CREDENCIALES
-    Admin: gonzalo
-    pass:123456789
+Credenciales
 
-El ProyectoDjango esta compuesto por 2 apps: Blog y cuentas.
-    En la app blog estara el contenido correspondiente al blog
-    En la app cuentas lo referido al avatar o a la adicion de informacion de perfil como imagen de avatar y urls de contactos
+Admin: gonzalo
+Contraseña: 123456789
+Apps
+El proyecto Django se compone de 2 aplicaciones:
 
-El sitio esta compuesto por:
-    Home
-        Pagina de inicio, sin necesidad de logueo para ver donde se listan los posts creados
-    Acerca de mì
-        Pagina de con una reseña personal acerca de mi, sin necesidad de logueo para ver donde se listan los posts creados
-    Inicia sesion
-        Pagina para realizar login o registro de una nueva cuenta
-        Al inicar sesion se adicionla la visualizacion de Nuevo Post y una lista depslegable "Perfil" para: ver y actualizar la informacion de la cuenta, ver el perfil (bio y enlaces de contacto) , editar perfil para editra la informacion anterior (Bio, y enlaces de contacto)
+	Blog
+		Contiene el contenido correspondiente al blog.
+	Cuentas
+ 		Incluye la gestión de avatares y la adición de información de perfil como imagen de avatar y URLs de contactos.
 
+Páginas del Sitio
+	Home
+ 		Página de inicio, accesible sin necesidad de iniciar sesión, donde se listan los posts creados.
+	Acerca de Mí
+		Página personal con una reseña sobre mí. También es accesible sin necesidad de iniciar sesión y se listan los posts creados.
+	Inicia Sesión
+		Página para iniciar sesión o registrarse para una nueva cuenta.
+		Al iniciar sesión, se añade la opción de crear un Nuevo Post y una lista desplegable "Perfil" que incluye:
+		Ver y actualizar la información de la cuenta.
+		Ver el perfil (biografía y enlaces de contacto).
+		Editar perfil para modificar la información anterior (biografía y enlaces de contacto).
  
