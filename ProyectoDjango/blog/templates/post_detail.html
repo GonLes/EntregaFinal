@@ -12,12 +12,12 @@
    <p>Creado:{{ post.creado }}</p>
     <p>Modificado:{{ post.modificado }}</p>
     {% if user.is_authenticated %}
-    {% if user.id == post.autor.id %}
+    
     <div style="text-align: center;">
-    <a href="{% url 'post_edit' post.pk %}" style="font-weight: bold; text-decoration: underline;color:green;">Editar Post</a>
+    <a href="{% url 'post_edit' post.pk %}" style="font-weight: bold; text-decoration: underline;">Editar Post</a>
     <br>
-    <a href="{% url 'post_delete' post.pk %}" style="font-weight: bold; text-decoration: underline; color: red;">Elimina Post</a>
-    {% endif %}
+    <a href="{% url 'post_delete' post.pk %}" style="font-weight: bold; text-decoration: underline;">Elimina Post</a>
+    
 
   {% endif %}
 

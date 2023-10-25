@@ -23,4 +23,16 @@ El proyecto Django se compone de 2 aplicaciones:
 				Ver y actualizar la información de la cuenta.
 				Ver el perfil (biografía y enlaces de contacto).
 		Editar perfil para modificar la información anterior (biografía y enlaces de contacto).
+
+LIBRERIAS ISNTALADAS
+
+beautifulsoup4==4.12.2
+crispy-bootstrap4==2022.1
+Django==4.2.5
+django-bootstrap4==23.2
+django-crispy-forms==2.0
+Pillow==10.0.1
+soupsieve==2.5
+sqlparse==0.4.4
+tzdata==2023.3
  

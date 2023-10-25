@@ -4,7 +4,7 @@
 <h1>Editando Post</h1>
 <br></br>
 <table>
-<form action="" method="post">{% csrf_token %}
+<form method="POST" enctype="multipart/form-data" >{% csrf_token %}
   {{ form.as_table }}
 <button class="btn btn-secondary"> Actualizar </button>
 <br></br>
