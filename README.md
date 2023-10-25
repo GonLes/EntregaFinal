@@ -11,8 +11,10 @@ El proyecto Django se compone de 2 aplicaciones:
 		Contiene el contenido correspondiente al blog.
 	Cuentas
  		Incluye la gestión de avatares y la adición de información de perfil como imagen de avatar y URLs de contactos.
-   Páginas del Sitio
- 	Home
+
+Páginas del Sitio
+   
+        Home
  		Página de inicio, accesible sin necesidad de iniciar sesión, donde se listan los posts creados.
 	Acerca de Mí
 		Página personal con una reseña sobre mí. También es accesible sin necesidad de iniciar sesión y se listan los posts creados.
