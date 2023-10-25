@@ -1,9 +1,9 @@
 Entrega Final - Proyecto Django
 Admin Panel
+
 	Credenciales
- 
-	Admin: Gonzalo
-	Contraseña: Ani010914
+ 		Admin: Gonzalo
+		Contraseña: Ani010914
 Apps
 El proyecto Django se compone de 2 aplicaciones:
 
