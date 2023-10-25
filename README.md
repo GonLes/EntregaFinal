@@ -25,6 +25,8 @@ El proyecto Django se compone de 2 aplicaciones:
 		Editar perfil para modificar la información anterior (biografía y enlaces de contacto).
 
 LIBRERIAS INSTALADAS
+
+
 	beautifulsoup4==4.12.2
 	crispy-bootstrap4==2022.1
 	Django==4.2.5
