@@ -5,7 +5,8 @@ Admin Panel
  		Admin: Gonzalo
 		Contraseña: Ani010914
 Apps
-El proyecto Django se compone de 2 aplicaciones:
+
+  	El proyecto Django se compone de 2 aplicaciones:
 
 	Blog
 		Contiene el contenido correspondiente al blog.
